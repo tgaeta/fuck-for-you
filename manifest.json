@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Fuck For You",
+  "version": "1.0",
+  "description": "Automatically selects the Following tab and removes the For you tab on x.com",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://x.com/*", "*://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
